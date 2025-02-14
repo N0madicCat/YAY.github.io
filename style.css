@@ -1,0 +1,351 @@
+body {
+  margin: 0px;
+  background: #ECEFF1;
+}
+
+.all {
+  position: fixed;
+  background: transparent;
+  width: 400px;
+  height: 410px;
+  top: 247px;
+  left: calc(50vw - 200px);
+}
+
+.cartridge-1 {
+  position: fixed;
+  background: #B0BEC5;
+  width: 350px;
+  height: 81px;
+  margin-top: 329px;
+  margin-left: 25px;
+  border-radius: 0px 0px 5px 5px;
+  z-index: 1;
+  animation: showall 1.5s ease;
+}
+
+.cartridge-2 {
+  position: fixed;
+  background: #B0BEC5;
+  width: 400px;
+  height: 330px;
+  margin-left: 0px;
+  border-radius: 5px;
+  z-index: 2;
+  animation: showall 1.5s ease;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.hole {
+  position: fixed;
+  background: rgba(0,0,0,0.05);
+  width: 70px;
+  height: 408px;
+  margin-left: 52px;
+  z-index: 3;
+  border:  1px solid rgba(0,0,0,0.05);
+  animation: showall 1.5s ease;
+}
+
+.hole-2 {
+  position: fixed;
+  background: rgba(0,0,0,0.05);
+  width: 72px;
+  height: 45px;
+  borer-radius: 5px;
+  margin-left: 52px;
+  z-index: 3;
+  box-shadow: inset 0 -2px 35px rgba(0,0,0,0.05);
+  animation: showall 1.5s ease;
+}
+
+.line-1 {
+  width: 65px;
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(0,0,0,0.1);
+  margin-left: 2.5px;
+  margin-top: 6.5px;
+  z-index: 999;
+  animation: showall 1.5s ease;
+}
+.linend {
+  margin-bottom: 13px;
+}
+.line-2 {
+  width: 65px;
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(0,0,0,0.1);
+  margin-left: 2.5px;
+  margin-top: 8px;
+  z-index: 999;
+  animation: showall 1.5s ease;
+}
+
+.line-3 {
+  width: 65px;
+  height: 20px;
+  border-radius: 3px;
+  background: rgba(0,0,0,0.1);
+  margin-left: 2.5px;
+  margin-top: 8px;
+  z-index: 999;
+  animation: showall 1.5s ease;
+}
+
+.arrow {
+  position: fixed;
+  width: 0px;
+  height: 0px;
+  border-left: 17px solid transparent;
+  border-right: 17px solid transparent;
+  border-top: 27px solid rgba(0,0,0,0.09);
+  border-bottom: 12px solid transparent;
+  z-index: 5;
+  margin-top: 302.5px;
+  margin-left: 187px;
+  animation: showall 1.5s ease;
+}
+
+.cover {
+  position: fixed;
+  background-image: url(https://howlongtobeat.com/games/10035_The_Legend_of_Zelda_Ocarina_of_Time.png);
+  background-size: cover;
+  background-position: bottom;
+  width: 200px;
+  height: 275px;
+  z-index: 5;
+  border-radius: 0px 0px 5px 5px;
+  margin-left: 144px;
+  animation: covershow 1.5s ease;
+}
+
+.minihole-1 {
+  position: fixed;
+  width: 30px;
+  height: 7px;
+  background: rgba(0,0,0,0.1);
+  border-radius: 0px 0px 3px 3px;
+  z-index: 4;
+  margin-left: 12px;
+  animation: showall 1.5s ease;
+}
+
+.minihole-2 {
+  position: fixed;
+  width: 30px;
+  height: 7px;
+  background: rgba(0,0,0,0.1);
+  border-radius: 0px 0px 3px 3px;
+  z-index: 4;
+  margin-left: 357px;
+  animation: showall 1.5s ease;
+}
+
+.reload {
+  position: fixed;
+  width: 75px;
+  height: 75px;
+  border-radius: 5px;
+  left: calc(50vw - 37.5px);
+  bottom: calc(50vh - 345px);
+  cursor: pointer;
+  transition: background 0.3s ease;
+  animation: reload-animation 2.5s ease;
+}
+
+.reload:hover {
+  background: rgba(0,0,0,0.1)
+}
+
+.reload > path {
+  fill: #fff;
+}
+
+#customimage {
+  position: fixed;
+  width: 300px;
+  outline: none;
+  border-width: 0px 0px 1px 0px;
+  border-color: transparent;
+  border-style: solid;
+  background: transparent;
+  font-family: Roboto;
+  color: #37474F;
+  font-size: 17px;
+  transition: border-color 0.3s ease;
+  text-align: center;
+  /*top: calc(50vh - 270px);*/
+  top: 175px;
+  left: calc(50vw - 150px);
+  font-weight: 300;
+}
+
+#customimage:hover {
+  border-color: #CFD8DC;
+}
+
+#customimage:focus {
+  border-color: #90A4AE;
+}
+
+@-webkit-keyframes covershow {
+  0% {opacity: 0; transform: translate(0px,15px)}
+  75% {opacity: 1;}
+  100% { transform: translate(0px,0px)}
+}
+@-moz-keyframes covershow {
+  0% {opacity: 0; transform: translate(0px,15px)}
+  75% {opacity: 1;}
+  100% { transform: translate(0px,0px)}
+}
+@-ms-keyframes covershow {
+  0% {opacity: 0; transform: translate(0px,15px)}
+  75% {opacity: 1;}
+  100% { transform: translate(0px,0px)}
+}
+
+@-webkit-keyframes showall {
+  0% {opacity: 0; transform: translate(0px,-15px)}
+  75% {opacity: 1;}
+  100% { transform: translate(0px,-0px)}
+}
+@-moz-keyframes showall {
+  0% {opacity: 0; transform: translate(0px,-15px)}
+  75% {opacity: 1;}
+  100% { transform: translate(0px,-0px)}
+}
+@-ms-keyframes showall {
+  0% {opacity: 0; transform: translate(0px,-15px)}
+  75% {opacity: 1;}
+  100% { transform: translate(0px,-0px)}
+}
+
+
+@media screen and (max-width: 720px) {
+  .crt3d {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .crt3d {
+    transform: scale(0.7);
+  }
+  
+}
+
+@media screen and (max-height: 420px) {
+  .crt3d {
+    margin-top: -140px;
+    transform: scale(0.75)
+  }
+  #customimage {
+    margin-top: -165px;
+  }
+}
+
+
+/** 3D Effect**/
+/* HI JON!  (Just an easter egg for the man who challenged me to make a 3D hover effect lol) */
+
+.crt3d {
+	perspective: 1000px;
+}
+.crt3d a {
+	display: block;
+	transform-style: preserve-3d;
+	transition: all 0.5s ease;
+}
+.crt3d:hover a {
+  transform: rotateX(-25deg) translate(0px,60px);
+  transform-origin: top;
+}
+
+.top3d {
+  width: 397px;
+  height: 35px;
+  background: #B0BEC5;
+  position: fixed;
+  /*transform: translate(calc(50vw - 197px), calc(50vh - 200px)) rotateX(100deg) scale(1);*/
+  transform: translate(calc(50vw - 197px), 250px) rotateX(100deg) scale(1);
+  transition: all 0.5s ease;
+  animation: startup3d 2s linear;
+  z-index: -1;
+  opacity: 0.5;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.crt3d:hover > .top3d {
+  opacity: 1;
+  /*transform: translate(calc(50vw - 198px), calc(50vh - 232.5px)) rotateX(65deg) scale(0.87);*/
+  transform: translate(calc(50vw - 198px), 220px) rotateX(65deg) scale(0.87);
+}
+
+.hole3d-1 {
+  background: rgba(0,0,0,0.125);
+  width: 30px;
+  height: 45%;
+  margin-left: 10px;
+  float: left;
+}
+
+.hole3d-2 {
+  background: rgba(0,0,0,0.125);
+  width: 72px;
+  height: 45%;
+  margin-left: 10px;
+  float: left;
+}
+
+.hole3d-3 {
+  background: rgba(0,0,0,0.125);
+  width: 30px;
+  height: 45%;
+  margin-right: 11px;
+  float: right;
+}
+
+.hole3d-4 {
+  background: rgba(0,0,0,0.125);
+  width: 30px;
+  height: 50%;
+  margin-left: -112px;
+  float: left;
+  margin-top: 20px;
+}
+
+.hole3d-5 {
+  background: rgba(0,0,0,0.125);
+  width: 72px;
+  height: 50%;
+  margin-left: -72px;
+  float: left;
+  margin-top: 20px;
+}
+
+.hole3d-6 {
+  background: rgba(0,0,0,0.125);
+  width: 30px;
+  height: 50%;
+  margin-right: -30px;
+  float: right;
+  margin-top: 20px;
+}
+
+@-webkit-keyframes startup3d {
+  0% {opacity: 0;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-moz-keyframes startup3d {
+  0% {opacity: 0;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-ms-keyframes startup3d {
+  0% {opacity: 0;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
